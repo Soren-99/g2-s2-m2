@@ -1,5 +1,6 @@
 package sorenrahimi.g1s2m2.services;
 
+import org.springframework.stereotype.Service;
 import sorenrahimi.g1s2m2.entities.BlogPost;
 import sorenrahimi.g1s2m2.exceptions.NotFoundException;
 
@@ -8,6 +9,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 
+@Service
 public class BlogPostsService {
     private List<BlogPost> blogPostsList = new ArrayList<>();
     public List<BlogPost> getBlogPostsList(){

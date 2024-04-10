@@ -1,7 +1,7 @@
 package sorenrahimi.g1s2m2.services;
 
+import org.springframework.stereotype.Service;
 import sorenrahimi.g1s2m2.entities.Author;
-import sorenrahimi.g1s2m2.entities.BlogPost;
 import sorenrahimi.g1s2m2.exceptions.NotFoundException;
 
 import java.util.ArrayList;
@@ -9,6 +9,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 
+@Service
 public class AuthorsService {
     private List<Author> authorsList = new ArrayList<>();
     public List<Author> getAuthorsList(){
